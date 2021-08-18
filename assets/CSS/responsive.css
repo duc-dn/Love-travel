@@ -1,0 +1,123 @@
+@media (max-width: 1023px) {
+    html {
+        font-size: 55%;
+    }
+    .header__top {
+        padding: 0 4%;
+    }
+    .navbar {
+        display: none;
+    }
+
+    /* search  */
+    .search__form {
+        width: 100%;
+    }
+    .search__categories {
+        flex-direction: column;
+        padding: 0 0;
+    }
+    .search__categories-item {
+        width: 100%;
+    }
+    .search__categories-item:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+
+    /* hoiliday */
+    .hoiliday-packages__container {
+        flex-direction: column;
+    }
+    .hoiliday-packages__title, 
+    .hoiliday-packages-btn {
+        margin-left: 0;
+    }
+    .hoiliday-packages__title {
+        margin-bottom: 4rem;
+    }
+    .hoiliday-packages-btn {
+        text-align: center;
+        display: inline-block;
+    }
+
+
+    /* best    */
+    .best__slider-container {
+        margin-top: 8rem;
+    }
+    .best {
+        padding: 4rem;
+    }
+    .tour__item {
+        margin-bottom: 4rem;
+    }
+
+    /* footer    */
+    .footer__title-content {
+        padding-left:  0;
+    }
+    .footer__search {
+        margin-top: 6rem;
+    }
+    .footer__search-form {
+        width: 80%;
+    }
+    .footer__btn {
+        width: 20%;
+        margin-left: 3rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .search {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20rem;
+    }
+    .destinations {
+        padding: 0 4rem;
+    }
+    .best__countdown {
+        width: 100%;
+    }
+    .tour {
+        padding: 0 4rem;
+    }
+    .c-btn-big {
+        width: 100%;
+        display: block;
+        text-align: center;
+        font-size: 1.4rem;
+    }
+
+    /* footer  */
+    .footer {
+        padding-bottom: 0;
+    }
+    .footer__container {
+        padding: 0 4rem;
+    }
+    .footer__search-form, .footer__btn {
+        width: 100%;
+        display: block;
+    }
+    .footer__btn {
+        margin-left: 0;
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .footer__footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer_author {
+        margin-bottom: 1rem;
+    }
+    .c-btn-medium {
+        display: block;
+        max-width: 25rem;
+        text-align: center;
+        margin: auto;
+    }
+}

@@ -1,0 +1,727 @@
+$heading-color: #555555;
+$primary-color: #FFFFFF;
+$gray-color: #A9A9A9;
+$purple-color: #BA71DA;
+$border-color: #f1f1f1;
+$red-color: #f76570;
+$blue-color: #14B9D5;
+$green-color: #1BBC9B;
+$orange-color: #F3A46B;
+$yellow-color: #FFD205;
+
+.heading__sub-title {
+    font-size: 1.5rem;
+    color: $gray-color;
+
+}
+
+.heading__title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: $heading-color;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+
+// start header and navbar  
+.header {
+    height: 10rem;
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 0 4%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    &__logo img {
+        width: 160px;
+    }
+
+    &__menu-icon {
+        margin-left: auto;
+        color: $primary-color;
+        display: inline-block;
+        font-size: 2.6rem;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+}
+
+.navbar {
+    margin-left: 9rem;
+
+    &__item {
+        display: inline-block;
+        list-style-type: none;
+        margin-right: 3rem;
+        position: relative;
+        padding: 2rem 0;
+
+        &-link {
+            text-decoration: none;
+            color: $primary-color;
+            font-size: 1.4rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            padding: 1rem 0;
+            letter-spacing: 2px;
+        }
+
+        &-btn {
+            background-color: $purple-color;
+            color: white;
+            display: inline-block;
+
+            &:hover {
+                opacity: 0.9;
+                box-shadow: 0px 0px 10px $purple-color;
+            }
+        }
+
+        &:hover .navbar__subnav {
+            display: block;
+        }
+    }
+
+    &__subnav,
+    &__subnav-second {
+        background-color: $primary-color;
+        border: 1px solid $border-color;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        width: 18rem;
+        position: absolute;
+    }
+
+    &__subnav,
+    &__subnav-second {
+        top: 100%;
+        left: 0;
+        display: none;
+
+        &-item {
+            padding: 1.2rem 1.5rem;
+            position: relative;
+
+            &:not(:last-child) {
+                border-bottom: 1px solid $border-color;
+            }
+
+            &:hover {
+                background-color: #f9f9f9;
+            }
+
+            &-icon {
+                font-size: 1.4rem;
+                margin-left: 2px;
+            }
+
+            &:hover .navbar__subnav-second {
+                display: block;
+            }
+        }
+
+        &-link {
+            color: $gray-color;
+            font-size: 1.4rem;
+            letter-spacing: 2px;
+            font-weight: 500;
+            position: relative;
+
+            &--has-des::before {
+                content: "Hot";
+                position: absolute;
+                background-color: $red-color;
+                padding: 0.4rem 0.5rem;
+                border-radius: 1rem;
+                color: $primary-color;
+                font-size: 1rem;
+                right: -6rem;
+            }
+        }
+    }
+
+    &__subnav-second {
+        top: 0;
+        left: calc(100% + 1rem);
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -20px;
+            background-color: transparent;
+            width: 20px;
+            height: 12rem;
+        }
+    }
+}
+
+// end header and navbar  
+
+
+
+// start search 
+.search {
+    background: url(../img/background.jpg) top center no-repeat;
+    background-size: cover;
+    padding-top: 27rem;
+    padding-bottom: 18rem;
+
+    &__container {
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 5rem;
+        font-weight: 700;
+        color: $primary-color;
+
+        span::before {
+            background-color: $purple-color;
+        }
+    }
+
+    &__heading {
+        font-size: 2rem;
+        font-weight: 400;
+        letter-spacing: 4px;
+        color: white;
+        margin: 2.5rem 0 4.5rem 0;
+    }
+
+    &__form {
+        width: 40rem;
+        background-color: $primary-color;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        padding: 1rem 1.5rem;
+        border-radius: 2rem;
+        cursor: pointer;
+    }
+
+    &__input {
+        outline: none;
+        border: none;
+        width: 90%;
+        padding: 0 1rem;
+    }
+
+    &__btn-icon {
+        width: 10%;
+        font-size: 2rem;
+        color: $gray-color;
+
+    }
+
+    &__categories {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        margin: 8rem auto;
+        padding: 0 30rem;
+
+        &-item {
+            width: calc(25% - 15px);
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 2.5rem 0;
+        }
+
+        &-img {
+            width: 4rem;
+            text-align: center;
+        }
+    }
+}
+// end start 
+
+
+// start destinations
+.destinations {
+    text-align: center;
+    margin: 6rem 0 8rem 0;
+
+    &__title span::before {
+        background-color: #1BBC9B;
+    }
+    &__item {
+        position: relative;
+        &:hover .destinations__overlay {
+            display: flex;
+        }
+        margin-top: 2.4rem;
+    }
+    
+    &__background {
+        width: 100%;
+        filter: brightness(0.85);
+    }
+
+    &__symbol {
+        position: absolute;
+        top: 3rem;
+        left: 3rem;
+        width: 4rem;
+        z-index: 1;
+    }
+
+    &__services {
+        position: absolute;
+        bottom: 3rem;
+        left: 3rem;
+        text-align: left;
+        color: $primary-color;
+        z-index: 1;
+    }
+
+    &__place-name {
+        font-size: 2.2rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+
+    &__packages {
+        color: $primary-color;
+        font-size: 1.4rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+    &__overlay {
+        width: 100%;
+        height: 100%;
+        background-color: $blue-color;
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        animation: fadeIn 0.3s linear;
+        &-content {
+            text-align: center;
+            color: $primary-color;
+        }
+
+        &-title {
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        &-list {
+            margin: 2rem;
+        }
+        &-item {
+            &:not(:last-child) {
+                padding-bottom: 1rem;
+            }
+        }
+        &-link {
+            font-size: 1.4rem;
+            color:$primary-color;
+            padding: 0 3rem;
+            display: inline-block;
+        }
+        &-btn {
+            background-color:$primary-color;
+            color: $blue-color;
+            font-size:1.3rem;
+            font-weight: 500;
+            display: inline-block;
+            letter-spacing: 2px;
+        }
+    }
+}
+// end destinations
+
+
+// start hoiliday packages
+.hoiliday-packages {
+    background: url(../img/parallax-search-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 8rem;
+    &__container {
+        align-items: center;
+    }
+    &__title {
+        font-size: 5rem;
+        font-weight: 700;
+        color: $primary-color;
+        margin-left: 18rem;
+        span::before {
+            background-color:$red-color;
+        }
+    }
+    &-btn {
+        background-color:$primary-color;
+        color: $red-color;
+        font-size: 1.4rem;
+        font-weight: 500;
+        letter-spacing: 2px;
+        cursor: pointer;
+        margin-left: 3rem;
+    }
+}
+// end hoiliday packages
+
+
+//start best
+.best {
+    padding: 8rem 0;
+    &__desc {
+        font-size: 1.6rem;
+        color: $gray-color;
+        margin-bottom: 4rem;
+    }
+    &__price {
+        font-size: 3.4rem;
+        &-old {
+            color: $gray-color;
+            font-weight: 400;
+        }
+        &-new {
+            color: $heading-color;
+            font-weight: 400;
+            margin-left: 1rem;
+        }
+    }
+    &__each-person {
+        font-size: 1.2rem;
+        color: $heading-color;
+        font-weight: 400;
+    }
+    &__btn {
+        background-color: $green-color;
+        color: white;
+        display: inline-block;
+        margin-top: 3rem;
+        font-size: 1.4rem;
+        font-weight:400;
+        cursor: pointer;
+        letter-spacing:2px;
+    }
+    &__slider {
+        &-container {
+            width: 100%;
+        }
+        &-img {
+            width: 100%;
+        }
+    }
+    &__countdown {
+        display: flex;
+        justify-content:space-between;
+        background-color: $blue-color;
+        width: 65%;
+        margin-top: -4rem;
+        margin: auto;
+        &-item {
+            padding: 3rem;
+            text-align: center;
+            color: $primary-color;
+        }
+        &-item--has-slash {
+            position: relative;
+        }
+        &-item--has-slash::after {
+            content: '/';
+            position: absolute;
+            font-size: 4rem;
+            left: 100%;
+            top: 50%;
+            color: rgba(0, 0, 0, 0.1);
+            transform: translateY(-50%);
+        }
+        &-number {
+            font-size: 3rem;
+        }
+        &-time {
+            font-size: 1.4rem;
+        }
+    }
+}
+// end best   
+
+
+// start tour
+.tour {
+    margin-bottom: 6rem;
+    &__item {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    &__img {
+        width: 15%;
+    }
+    &__content {
+        width: 85%;
+        padding-left: 3rem;
+        &-title {
+            font-size: 2rem;
+            color: $heading-color;
+        }
+        &-desc {
+            font-size: 1.5rem;
+            color: $gray-color;
+            line-height: 1.4;
+            margin: 1rem 0;
+        }
+        &-view-more {
+            font-size: 1.4rem;
+            color: $blue-color;
+            letter-spacing:2px;
+        }
+    }
+
+}
+// end tour
+
+
+// start discover   
+.discover {
+    text-align: center;
+    overflow: hidden;
+    color: $primary-color;
+    &__item-1, &__item-2{
+        padding: 6rem 0;
+        background: url("../img/parallax-5-filter.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    &__item-2 {
+        background: url("../img/parallax-6-filter.jpg");
+        .discover-btn {
+            color: $green-color;
+        }
+    }
+    &__time {
+        font-size: 1.4rem;
+    }
+    h4 {
+        font-size: 4rem;
+        font-weight: 700;
+        margin: 2rem 0 3rem 0;
+    }
+    &-btn {
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: $orange-color;  
+        background-color: $primary-color;
+        display: inline-block;
+        letter-spacing: 4px;
+    }
+}
+// end disover    
+
+.package {
+    text-align: center;
+    padding: 8rem 0;
+    &__title {
+        margin-bottom: 5rem;
+        span::before {
+            background-color: $green-color;
+        }
+    }
+    &__item {
+        border: 1px solid $border-color;
+        margin-top: 3rem;
+        img {
+            width: 100%;
+        }
+    }
+    &__content {
+        padding: 3rem;
+        text-align:left;
+    }
+    &__place-name {
+        font-size: 1.8rem;
+        color: $heading-color;
+        font-weight: 700;
+    }
+    &__address {
+        font-size: 1.4rem;
+        border-bottom: 1px solid $border-color;
+        padding: 1rem 0 2rem 0;
+        display: block;
+        color: $gray-color;
+        &-icon {
+            color: $gray-color;
+            margin-right: 0.5rem;
+        }
+    }
+    &__services {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem 0;
+        border-bottom: 1px solid $border-color;
+        &-name {
+            width: 50%;
+        }
+        &-price {
+            width: 50%;
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: $heading-color;
+            text-align: right;
+            
+        }
+        &-cultural, &-relax {
+            font-size: 1.4rem;
+            color: $heading-color;
+            font-weight: 500;
+        }
+        &-cultural {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        &-desc {
+            position: relative;
+            &::before {
+                position: absolute;
+                content: "+ 1";
+                color: $primary-color;
+                padding: 2px 1rem;
+                font-size: 1rem;
+                bottom: 0; right: -5rem;
+                border-radius: 2rem;
+            }
+            &--yellow::before {
+                background-color: $yellow-color;
+            }
+            &--red::before {
+                background-color: $red-color;
+            }
+            &--purple::before {
+                background-color: $purple-color;
+            }
+        }
+    }
+    &__desc {
+        font-size:1.4rem;
+        letter-spacing:1px;
+        color: $gray-color;
+        line-height: 1.4;
+        padding: 3rem 0;
+    }
+    &__btn {
+        background-color: $yellow-color;
+        color: $primary-color;
+        font-size:1.2rem;
+        font-weight: 400;
+        letter-spacing:1px;
+        &--purple {
+            background-color: $purple-color;
+        }
+        &--red {
+            background-color: $red-color;
+        }
+    }
+}
+
+
+.footer {
+    padding: 8rem 0;
+    background: url("../img/parallax-7.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    &__container {
+        align-items: flex-end;
+    }
+    &__title-content {
+        padding-left: 20rem;
+    }
+    &__search {
+        &-form {
+            width: 60%;
+            padding: 1.5rem 2rem;
+            background-color: $primary-color;
+            border: none; outline: none;
+            border-radius:  2.5rem;
+        }
+    }
+    &__title {
+        margin: 0;
+    }
+    &__sub-title {
+        font-weight: 500;
+        margin-bottom: 1.5rem;
+        display: inline-block;
+    }
+    &__btn {
+        padding: 1.5rem 2rem;
+        background-color:$blue-color;
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        color: $primary-color;
+        margin-left: 1.5rem;;
+    }
+    &__details {
+        background-color: $primary-color;
+        margin-top: 8rem;
+        padding: 4rem;
+    }
+    &__desc {
+        font-size: 1.5rem;
+        color: $gray-color;
+        line-height: 1.4;
+        padding: 4rem 0;
+        max-width: 50rem;
+    }
+    &__logo {
+        width: 16rem;
+    }
+    &__social {
+        &-item {
+            display: inline-block;
+        }
+        &-link {
+            padding: 0.5rem;
+            font-size: 1.8rem;
+            color: $heading-color;
+            margin-right: 1rem;
+        }
+    }
+    &__item {
+        &-title {
+            font-size: 1.3rem;
+            letter-spacing: 3px;
+            font-size: 600;
+            color: $heading-color;
+            margin-top: 2rem;
+            margin-bottom: 4rem;
+        }
+        &-desc {
+            padding: 0.5rem 0;
+            font-size: 1.4rem;
+            color: #A49A9A;
+            i.fas {
+                margin-right: 1rem;
+            }
+        }
+    }
+    &__footer {
+        background-color: $blue-color;
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 2rem;
+        color: white;
+        span {
+            font-size: 1.2rem;
+            font-weight: 400;
+            letter-spacing:2px;
+        }
+    }
+}
