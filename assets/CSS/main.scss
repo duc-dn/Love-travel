@@ -251,15 +251,17 @@ $yellow-color: #FFD205;
         background-color: #1BBC9B;
     }
     &__item {
+        margin-top: 2.4rem;
         position: relative;
         &:hover .destinations__overlay {
             display: flex;
         }
-        margin-top: 2.4rem;
     }
     
     &__background {
+        height: 100%;
         width: 100%;
+        z-index: 0;
         filter: brightness(0.85);
     }
 
@@ -295,10 +297,10 @@ $yellow-color: #FFD205;
 
     &__overlay {
         width: 100%;
-        height: 100%;
+        height: 99.5%;
         background-color: $blue-color;
         position: absolute;
-        z-index: 2;
+        z-index: 3;
         top: 0;
         left: 0;
         display: none;
@@ -421,13 +423,14 @@ $yellow-color: #FFD205;
         display: flex;
         justify-content:space-between;
         background-color: $blue-color;
-        width: 65%;
+        width: 60%;
         margin-top: -4rem;
         margin: auto;
         &-item {
-            padding: 3rem;
+            padding: 3rem 0;
             text-align: center;
             color: $primary-color;
+            width: 25%;
         }
         &-item--has-slash {
             position: relative;
@@ -639,13 +642,11 @@ $yellow-color: #FFD205;
     background-repeat: no-repeat;
     &__container {
         align-items: flex-end;
-    }
-    &__title-content {
-        padding-left: 20rem;
+        padding: 0 16rem;
     }
     &__search {
         &-form {
-            width: 60%;
+            width: 70%;
             padding: 1.5rem 2rem;
             background-color: $primary-color;
             border: none; outline: none;
@@ -666,7 +667,7 @@ $yellow-color: #FFD205;
         font-size: 1.5rem;
         letter-spacing: 2px;
         color: $primary-color;
-        margin-left: 1.5rem;;
+        margin-left: 2rem;;
     }
     &__details {
         background-color: $primary-color;
@@ -698,7 +699,6 @@ $yellow-color: #FFD205;
         &-title {
             font-size: 1.3rem;
             letter-spacing: 3px;
-            font-size: 600;
             color: $heading-color;
             margin-top: 2rem;
             margin-bottom: 4rem;
