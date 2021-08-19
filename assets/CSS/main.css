@@ -197,14 +197,16 @@
   background-color: #1BBC9B;
 }
 .destinations__item {
-  position: relative;
   margin-top: 2.4rem;
+  position: relative;
 }
 .destinations__item:hover .destinations__overlay {
   display: flex;
 }
 .destinations__background {
+  height: 100%;
   width: 100%;
+  z-index: 0;
   filter: brightness(0.85);
 }
 .destinations__symbol {
@@ -235,10 +237,10 @@
 }
 .destinations__overlay {
   width: 100%;
-  height: 100%;
+  height: 99.5%;
   background-color: #14B9D5;
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   top: 0;
   left: 0;
   display: none;
@@ -350,14 +352,15 @@
   display: flex;
   justify-content: space-between;
   background-color: #14B9D5;
-  width: 65%;
+  width: 60%;
   margin-top: -4rem;
   margin: auto;
 }
 .best__countdown-item {
-  padding: 3rem;
+  padding: 3rem 0;
   text-align: center;
   color: #FFFFFF;
+  width: 25%;
 }
 .best__countdown-item--has-slash {
   position: relative;
@@ -559,12 +562,10 @@
 }
 .footer__container {
   align-items: flex-end;
-}
-.footer__title-content {
-  padding-left: 20rem;
+  padding: 0 16rem;
 }
 .footer__search-form {
-  width: 60%;
+  width: 70%;
   padding: 1.5rem 2rem;
   background-color: #FFFFFF;
   border: none;
@@ -585,7 +586,7 @@
   font-size: 1.5rem;
   letter-spacing: 2px;
   color: #FFFFFF;
-  margin-left: 1.5rem;
+  margin-left: 2rem;
 }
 .footer__details {
   background-color: #FFFFFF;
@@ -614,7 +615,6 @@
 .footer__item-title {
   font-size: 1.3rem;
   letter-spacing: 3px;
-  font-size: 600;
   color: #555555;
   margin-top: 2rem;
   margin-bottom: 4rem;
