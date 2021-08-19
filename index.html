@@ -21,6 +21,8 @@
 
 <body>
     <div class="wrapper">
+
+        <!-- start header  -->
         <header class="header">
             <a href="" class="header__logo">
                 <img src="assets/img/logo.png" alt="">
@@ -88,8 +90,123 @@
                 </li>
             </ul>
 
-            <div class="header__menu-icon fas fa-bars"></div>
+            <div class="header__menu-icon fas fa-bars" id="menu"></div>
+
+
+            <!-- START MENU PC   -->
+            <div class="pc-menu" id="pc-menu">
+                <div class="pc-menu__container" id="pc-menu__container">
+                    <i class="pc-menu__btn-close far fa-times-circle" id="btn-close"></i>
+                    <span class="pc-menu__sub-title heading__sub-title">Best</span>
+                    <h4 class="pc-menu__title heading__title"><span class="underline underline--yellow">PACKAGES</span></h4>
+
+                    <div class="pc-menu__item">
+                        <img src="assets/img/package-1-150x150.jpg" alt="" class="pc-menu__img">
+                        <div class="pc-menu__item-content">
+                            <h5 class="pc-menu__item-title">Berlin</h5>
+                            <div class="pc-menu__item-place">
+                                <i class="pc-menu__item-icon fas fa-map-marker-alt"></i>
+                                <span class="pc-menu__item-name-place">Europe</span>
+                            </div>
+                            <a href="" class="pc-menu__item-btn">From 700 $</a>
+                        </div>
+                    </div>
+
+                    <div class="pc-menu__item">
+                        <img src="assets/img/package-2-150x150.jpg" alt="" class="pc-menu__img">
+                        <div class="pc-menu__item-content">
+                            <h5 class="pc-menu__item-title">Hong Kong</h5>
+                            <div class="pc-menu__item-place">
+                                <i class="pc-menu__item-icon fas fa-map-marker-alt"></i>
+                                <span class="pc-menu__item-name-place">Asia</span>
+                            </div>
+                            <a href="" class="pc-menu__item-btn pc-menu__item-btn--gr-red">From 700 $</a>
+                        </div>
+                    </div>
+
+                    <div class="pc-menu__item">
+                        <img src="assets/img/package-3.jpg" alt="" class="pc-menu__img">
+                        <div class="pc-menu__item-content">
+                            <h5 class="pc-menu__item-title">San Francisco</h5>
+                            <div class="pc-menu__item-place">
+                                <i class="pc-menu__item-icon fas fa-map-marker-alt"></i>
+                                <span class="pc-menu__item-name-place">United States</span>
+                            </div>
+                            <a href="" class="pc-menu__item-btn pc-menu__item-btn--gr-purple">From 700 $</a>
+                        </div> 
+                    </div>
+
+                    <div class="destinations__item">
+                        <img src="assets/img/destination-9.jpg" alt="" class="destinations__background">
+                        <img src="assets/img/arch.png" alt="" class="destinations__symbol">
+                        <div class="destinations__services">
+                            <h3 class="destinations__place-name">Europe</h3>
+                            <span class="destinations__packages">3 packages</span>
+                        </div>
+
+                        <div class="destinations__overlay">
+                            <div class="destinations__overlay-content">
+                                <h4 class="destinations__overlay-title">Packages</h4>
+                                <ul class="destinations__overlay-list">
+                                    <li class="destinations__overlay-item">
+                                        <a href="" class="destinations__overlay-link">Berlin</a>
+                                    </li>
+                                    <li class="destinations__overlay-item">
+                                        <a href="" class="destinations__overlay-link">London</a>
+                                    </li>
+                                    <li class="destinations__overlay-item">
+                                        <a href="" class="destinations__overlay-link">Amsterdam</a>
+                                    </li>
+                                </ul>
+                                <a href="" class="btn-small destinations__overlay-btn">VIEW DESTINATION</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <span class="pc-menu__sub-title heading__sub-title">LAST</span>
+                    <h4 class="pc-menu__title heading__title"><span class="underline underline--orange">MINUTES</span></h4>
+
+                    <div class="pc-menu__item">
+                        <img src="assets/img/package-1-150x150.jpg" alt="" class="pc-menu__img">
+                        <div class="pc-menu__item-content">
+                            <h5 class="pc-menu__item-title">Tuscany</h5>
+                            <div class="pc-menu__item-place">
+                                <i class="pc-menu__item-icon fas fa-map-marker-alt"></i>
+                                <span class="pc-menu__item-name-place">Italy</span>
+                            </div>
+                            <a href="" class="pc-menu__item-btn pc-menu__item-btn--gr-green">From 700 $</a>
+                        </div>
+                    </div>
+
+                    <div class="pc-menu__item">
+                        <img src="assets/img/package-2-150x150.jpg" alt="" class="pc-menu__img">
+                        <div class="pc-menu__item-content">
+                            <h5 class="pc-menu__item-title">Amsterdam</h5>
+                            <div class="pc-menu__item-place">
+                                <i class="pc-menu__item-icon fas fa-map-marker-alt"></i>
+                                <span class="pc-menu__item-name-place">Netherlands</span>
+                            </div>
+                            <a href="" class="pc-menu__item-btn pc-menu__item-btn--gr-orange">From 700 $</a>
+                        </div>
+                    </div>
+
+                    <div class="pc-menu__item">
+                        <img src="assets/img/package-3.jpg" alt="" class="pc-menu__img">
+                        <div class="pc-menu__item-content">
+                            <h5 class="pc-menu__item-title">Phuket</h5>
+                            <div class="pc-menu__item-place">
+                                <i class="pc-menu__item-icon fas fa-map-marker-alt"></i>
+                                <span class="pc-menu__item-name-place">ThaiLand</span>
+                            </div>
+                            <a href="" class="pc-menu__item-btn pc-menu__item-btn--gr-blue">From 700 $</a>
+                        </div> 
+                    </div>
+                </div>
+            </div>
         </header>
+        <!-- end header  -->
+
+
 
         <!-- start search  -->
         <section class="search">
@@ -103,7 +220,8 @@
                     </p>
 
                     <div class="search__form">
-                        <input type="text" name="" id="" class="search__input" placeholder="Choose your Destination">
+                        <input type="text" name="" id="search-form" class="search__input"
+                            placeholder="Choose your Destination">
                         <i class="search__btn-icon fas fa-search"></i>
                     </div>
 
@@ -306,6 +424,7 @@
         </section>
         <!-- end destinations -->
 
+        <!-- start hoiliday -->
         <section class="hoiliday-packages">
             <div class="grid wide">
                 <div class="row hoiliday-packages__container">
@@ -323,7 +442,10 @@
 
 
         </section>
+        <!-- end hoiliday -->
 
+
+        <!-- start best -->
         <section class="best">
             <div class="grid wide">
                 <div class="row">
@@ -376,7 +498,9 @@
                 </div>
             </div>
         </section>
+        <!-- end best   -->
 
+        <!-- start tour -->
         <section class="tour">
             <div class="grid wide">
                 <div class="row">
@@ -425,7 +549,10 @@
                 </div>
             </div>
         </section>
+        <!-- end tour  -->
 
+
+        <!-- start discover  -->
         <section class="discover">
             <div class="grid">
                 <div class="row">
@@ -446,8 +573,10 @@
                 </div>
             </div>
         </section>
+        <!-- end discover -->
 
 
+        <!-- start packages -->
         <section class="package">
             <span class="heading__sub-title">PROMOTIONS</span>
             <h3 class="heading__title package__title">OUR <span class="underline">PACKAGES</span></h3>
@@ -466,16 +595,18 @@
                                 <div class="package__services">
                                     <div class="package__services-name">
                                         <span class="package__services-cultural">CULTURAL</span>
-                                        <span class="package__services-relax package__services-desc package__services-desc--yellow">RELAX</span> 
+                                        <span
+                                            class="package__services-relax package__services-desc package__services-desc--yellow">RELAX</span>
                                     </div>
                                     <span class="package__services-price ">
                                         700 $
                                     </span>
                                 </div>
                                 <p class="package__desc">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante.
+                                    Donec dapibus dictum scelerisque.
                                 </p>
-    
+
                                 <a href="" class="package__btn btn-small c-m-full-width">DETAILS</a>
                             </div>
                         </div>
@@ -492,16 +623,18 @@
                                 <div class="package__services">
                                     <div class="package__services-name">
                                         <span class="package__services-cultural">CULTURAL</span>
-                                        <span class="package__services-relax package__services-desc package__services-desc--red">RELAX</span> 
+                                        <span
+                                            class="package__services-relax package__services-desc package__services-desc--red">RELAX</span>
                                     </div>
                                     <span class="package__services-price ">
                                         1000 $
                                     </span>
                                 </div>
                                 <p class="package__desc">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante.
+                                    Donec dapibus dictum scelerisque.
                                 </p>
-    
+
                                 <a href="" class="package__btn package__btn--red btn-small c-m-full-width">DETAILS</a>
                             </div>
                         </div>
@@ -518,25 +651,30 @@
                                 <div class="package__services">
                                     <div class="package__services-name">
                                         <span class="package__services-cultural">CULTURAL</span>
-                                        <span class="package__services-relax package__services-desc package__services-desc--purple">RELAX</span> 
+                                        <span
+                                            class="package__services-relax package__services-desc package__services-desc--purple">RELAX</span>
                                     </div>
                                     <span class="package__services-price ">
                                         700 $
                                     </span>
                                 </div>
                                 <p class="package__desc">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante.
+                                    Donec dapibus dictum scelerisque.
                                 </p>
-    
-                                <a href="" class="package__btn package__btn--purple btn-small c-m-full-width">DETAILS</a>
+
+                                <a href=""
+                                    class="package__btn package__btn--purple btn-small c-m-full-width">DETAILS</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- end package    -->
 
 
+        <!-- start footer  -->
         <footer class="footer">
             <div class="grid wide">
                 <div class="row footer__container">
@@ -548,7 +686,7 @@
                     </div>
                     <div class="col l-6 m-12 c-12">
                         <div class="footer__search">
-                            <input type="text" name="" id="" class="footer__search-form">
+                            <input type="text" name="" id="footer-search" class="footer__search-form">
                             <a href="" class="btn-big footer__btn">SEND</a>
                         </div>
                     </div>
@@ -561,9 +699,10 @@
                         <div class="col l-6 m-12 c-12">
                             <img src="assets/img/logo-color.png" alt="" class="footer__logo">
                             <p class="footer__desc">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut diam et nibh condimentum venenatis eu ac magnasin. Quisque interdum est mauris, eget ullamcorper
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut diam et nibh
+                                condimentum venenatis eu ac magnasin. Quisque interdum est mauris, eget ullamcorper
                             </p>
-    
+
                             <ul class="footer__social-list">
                                 <li class="footer__social-item">
                                     <a href="" class="footer__social-link">
@@ -674,7 +813,7 @@
                                 </ul>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
                 <div class="footer__footer">
@@ -683,6 +822,7 @@
                 </div>
             </div>
         </footer>
+        <!-- end footer  -->
     </div>
     <script src="assets/main.js"></script>
 </body>

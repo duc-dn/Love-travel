@@ -51,6 +51,16 @@ $yellow-color: #FFD205;
             opacity: 0.9;
         }
     }
+
+    &-fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 6rem;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 1000;
+    }
 }
 
 .navbar {
@@ -239,25 +249,29 @@ $yellow-color: #FFD205;
         }
     }
 }
+
 // end start 
 
 
 // start destinations
-.destinations {
+.destinations,
+.place-item {
     text-align: center;
     margin: 6rem 0 8rem 0;
 
     &__title span::before {
         background-color: #1BBC9B;
     }
+
     &__item {
         margin-top: 2.4rem;
         position: relative;
+
         &:hover .destinations__overlay {
             display: flex;
         }
     }
-    
+
     &__background {
         height: 100%;
         width: 100%;
@@ -307,6 +321,7 @@ $yellow-color: #FFD205;
         align-items: center;
         justify-content: center;
         animation: fadeIn 0.3s linear;
+
         &-content {
             text-align: center;
             color: $primary-color;
@@ -317,30 +332,35 @@ $yellow-color: #FFD205;
             font-weight: 700;
             letter-spacing: 1px;
         }
+
         &-list {
             margin: 2rem;
         }
+
         &-item {
             &:not(:last-child) {
                 padding-bottom: 1rem;
             }
         }
+
         &-link {
             font-size: 1.4rem;
-            color:$primary-color;
+            color: $primary-color;
             padding: 0 3rem;
             display: inline-block;
         }
+
         &-btn {
-            background-color:$primary-color;
+            background-color: $primary-color;
             color: $blue-color;
-            font-size:1.3rem;
+            font-size: 1.3rem;
             font-weight: 500;
             display: inline-block;
             letter-spacing: 2px;
         }
     }
 }
+
 // end destinations
 
 
@@ -351,20 +371,24 @@ $yellow-color: #FFD205;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 8rem;
+
     &__container {
         align-items: center;
     }
+
     &__title {
         font-size: 5rem;
         font-weight: 700;
         color: $primary-color;
         margin-left: 18rem;
+
         span::before {
-            background-color:$red-color;
+            background-color: $red-color;
         }
     }
+
     &-btn {
-        background-color:$primary-color;
+        background-color: $primary-color;
         color: $red-color;
         font-size: 1.4rem;
         font-weight: 500;
@@ -373,68 +397,81 @@ $yellow-color: #FFD205;
         margin-left: 3rem;
     }
 }
+
 // end hoiliday packages
 
 
 //start best
 .best {
     padding: 8rem 0;
+
     &__desc {
         font-size: 1.6rem;
         color: $gray-color;
         margin-bottom: 4rem;
     }
+
     &__price {
         font-size: 3.4rem;
+
         &-old {
             color: $gray-color;
             font-weight: 400;
         }
+
         &-new {
             color: $heading-color;
             font-weight: 400;
             margin-left: 1rem;
         }
     }
+
     &__each-person {
         font-size: 1.2rem;
         color: $heading-color;
         font-weight: 400;
     }
+
     &__btn {
         background-color: $green-color;
         color: white;
         display: inline-block;
         margin-top: 3rem;
         font-size: 1.4rem;
-        font-weight:400;
+        font-weight: 400;
         cursor: pointer;
-        letter-spacing:2px;
+        letter-spacing: 2px;
     }
+
     &__slider {
         &-container {
             width: 100%;
         }
+
         &-img {
             width: 100%;
         }
     }
+
     &__countdown {
         display: flex;
-        justify-content:space-between;
+        justify-content: space-between;
         background-color: $blue-color;
         width: 60%;
         margin-top: -4rem;
         margin: auto;
+
         &-item {
             padding: 3rem 0;
             text-align: center;
             color: $primary-color;
             width: 25%;
         }
+
         &-item--has-slash {
             position: relative;
         }
+
         &-item--has-slash::after {
             content: '/';
             position: absolute;
@@ -444,49 +481,59 @@ $yellow-color: #FFD205;
             color: rgba(0, 0, 0, 0.1);
             transform: translateY(-50%);
         }
+
         &-number {
             font-size: 3rem;
         }
+
         &-time {
             font-size: 1.4rem;
         }
     }
 }
+
 // end best   
 
 
 // start tour
 .tour {
     margin-bottom: 6rem;
+
     &__item {
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
     }
+
     &__img {
         width: 15%;
     }
+
     &__content {
         width: 85%;
         padding-left: 3rem;
+
         &-title {
             font-size: 2rem;
             color: $heading-color;
         }
+
         &-desc {
             font-size: 1.5rem;
             color: $gray-color;
             line-height: 1.4;
             margin: 1rem 0;
         }
+
         &-view-more {
             font-size: 1.4rem;
             color: $blue-color;
-            letter-spacing:2px;
+            letter-spacing: 2px;
         }
     }
 
 }
+
 // end tour
 
 
@@ -495,185 +542,231 @@ $yellow-color: #FFD205;
     text-align: center;
     overflow: hidden;
     color: $primary-color;
-    &__item-1, &__item-2{
+
+    &__item-1,
+    &__item-2 {
         padding: 6rem 0;
         background: url("../img/parallax-5-filter.jpg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
     }
+
     &__item-2 {
         background: url("../img/parallax-6-filter.jpg");
+
         .discover-btn {
             color: $green-color;
         }
     }
+
     &__time {
         font-size: 1.4rem;
     }
+
     h4 {
         font-size: 4rem;
         font-weight: 700;
         margin: 2rem 0 3rem 0;
     }
+
     &-btn {
         font-size: 1.4rem;
         font-weight: 500;
-        color: $orange-color;  
+        color: $orange-color;
         background-color: $primary-color;
         display: inline-block;
         letter-spacing: 4px;
     }
 }
+
 // end disover    
 
+
+// start package
 .package {
     text-align: center;
     padding: 8rem 0;
+
     &__title {
         margin-bottom: 5rem;
+
         span::before {
             background-color: $green-color;
         }
     }
+
     &__item {
         border: 1px solid $border-color;
         margin-top: 3rem;
+
         img {
             width: 100%;
         }
     }
+
     &__content {
         padding: 3rem;
-        text-align:left;
+        text-align: left;
     }
+
     &__place-name {
         font-size: 1.8rem;
         color: $heading-color;
         font-weight: 700;
     }
+
     &__address {
         font-size: 1.4rem;
         border-bottom: 1px solid $border-color;
         padding: 1rem 0 2rem 0;
         display: block;
         color: $gray-color;
+
         &-icon {
             color: $gray-color;
             margin-right: 0.5rem;
         }
     }
+
     &__services {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 1.5rem 0;
         border-bottom: 1px solid $border-color;
+
         &-name {
             width: 50%;
         }
+
         &-price {
             width: 50%;
             font-size: 1.8rem;
             font-weight: 600;
             color: $heading-color;
             text-align: right;
-            
+
         }
-        &-cultural, &-relax {
+
+        &-cultural,
+        &-relax {
             font-size: 1.4rem;
             color: $heading-color;
             font-weight: 500;
         }
+
         &-cultural {
             display: block;
             margin-bottom: 0.5rem;
         }
+
         &-desc {
             position: relative;
+
             &::before {
                 position: absolute;
                 content: "+ 1";
                 color: $primary-color;
                 padding: 2px 1rem;
                 font-size: 1rem;
-                bottom: 0; right: -5rem;
+                bottom: 0;
+                right: -5rem;
                 border-radius: 2rem;
             }
+
             &--yellow::before {
                 background-color: $yellow-color;
             }
+
             &--red::before {
                 background-color: $red-color;
             }
+
             &--purple::before {
                 background-color: $purple-color;
             }
         }
     }
+
     &__desc {
-        font-size:1.4rem;
-        letter-spacing:1px;
+        font-size: 1.4rem;
+        letter-spacing: 1px;
         color: $gray-color;
         line-height: 1.4;
         padding: 3rem 0;
     }
+
     &__btn {
         background-color: $yellow-color;
         color: $primary-color;
-        font-size:1.2rem;
+        font-size: 1.2rem;
         font-weight: 400;
-        letter-spacing:1px;
+        letter-spacing: 1px;
+
         &--purple {
             background-color: $purple-color;
         }
+
         &--red {
             background-color: $red-color;
         }
     }
 }
 
+// end package
 
+
+// start footer 
 .footer {
     padding: 8rem 0;
     background: url("../img/parallax-7.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
     &__container {
         align-items: flex-end;
         padding: 0 16rem;
     }
+
     &__search {
         &-form {
             width: 70%;
             padding: 1.5rem 2rem;
             background-color: $primary-color;
-            border: none; outline: none;
-            border-radius:  2.5rem;
+            border: none;
+            outline: none;
+            border-radius: 2.5rem;
         }
     }
+
     &__title {
         margin: 0;
     }
+
     &__sub-title {
         font-weight: 500;
         margin-bottom: 1.5rem;
         display: inline-block;
     }
+
     &__btn {
         padding: 1.5rem 2rem;
-        background-color:$blue-color;
+        background-color: $blue-color;
         font-size: 1.5rem;
         letter-spacing: 2px;
         color: $primary-color;
-        margin-left: 2rem;;
+        margin-left: 2rem;
+        ;
     }
+
     &__details {
         background-color: $primary-color;
         margin-top: 8rem;
         padding: 4rem;
     }
+
     &__desc {
         font-size: 1.5rem;
         color: $gray-color;
@@ -681,13 +774,16 @@ $yellow-color: #FFD205;
         padding: 4rem 0;
         max-width: 50rem;
     }
+
     &__logo {
         width: 16rem;
     }
+
     &__social {
         &-item {
             display: inline-block;
         }
+
         &-link {
             padding: 0.5rem;
             font-size: 1.8rem;
@@ -695,6 +791,7 @@ $yellow-color: #FFD205;
             margin-right: 1rem;
         }
     }
+
     &__item {
         &-title {
             font-size: 1.3rem;
@@ -703,25 +800,152 @@ $yellow-color: #FFD205;
             margin-top: 2rem;
             margin-bottom: 4rem;
         }
+
         &-desc {
             padding: 0.5rem 0;
             font-size: 1.4rem;
             color: #A49A9A;
+
             i.fas {
                 margin-right: 1rem;
             }
         }
     }
+
     &__footer {
         background-color: $blue-color;
         display: flex;
         justify-content: space-between;
         padding: 2rem 2rem;
         color: white;
+
         span {
             font-size: 1.2rem;
             font-weight: 400;
-            letter-spacing:2px;
+            letter-spacing: 2px;
+        }
+    }
+}
+
+// end footer 
+
+
+
+.pc-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.253);
+    display: none;
+    opacity: 0;
+    z-index: 2;
+    &__btn-close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 3;
+        font-size: 3rem;
+        color: rgba(128, 128, 128, 0.384);
+        padding: 1rem;
+        cursor: pointer;
+        transform: 0.2s;
+        &:hover {
+            color: rgba(128, 128, 128, 0.3);
+        }
+    }
+
+    &__container {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: $primary-color;
+        height: 100%;
+        overflow-y: auto;
+        z-index: 2;
+        padding: 0rem 3.5rem 2rem 3.5rem;
+        width: 34rem;
+        text-align: center;
+        transform: translateX(0rem);
+        animation: showMenu 0.5s ease-in-out;
+        transition: 0.5s;
+    }
+
+    &__sub-title {
+        margin-top: 2rem;
+        display: inline-block;
+    }
+
+    &__title {
+        margin-top: 1rem;
+        font-size: 2.4rem;
+    }
+
+    &__item {
+        display: flex;
+        margin-top: 2.5rem;
+
+        img {
+            width: 35%;
+        }
+
+        &-content {
+            flex: 1;
+            text-align: left;
+            margin-left: 2.5rem;
+        }
+
+        &-title {
+            font-size: 2rem;
+            color: $heading-color;
+            font-weight: 500;
+        }
+
+        &-icon,
+        &-name-place {
+            font-size: 1.4rem;
+            color: $gray-color;
+        }
+
+        &-icon {
+            margin-right: 1rem;
+        }
+
+        &-place {
+            padding: 1rem 0 2rem 0;
+        }
+
+        &-btn {
+            display: block;
+            background: linear-gradient(to right, #ffd205 0%, #ff9b05 100%);
+            color: $primary-color;
+            font-size: 1.4rem;
+            text-align: center;
+            padding: 0.5rem 0;
+            border-radius: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+
+            &--gr-red {
+                background: linear-gradient(to right, #f76570 0%, #f78d65 100%);
+            }
+
+            &--gr-purple {
+                background: linear-gradient(to right, #ba71da 0%, #da717b 100%);
+            }
+
+            &--gr-green {
+                background: linear-gradient(to right, #1bbc9b 0%, #1bbc63 100%);
+            }
+
+            &--gr-orange {
+                background: linear-gradient(to right, #f3a46b 0%, #f3c96b 100%);
+            }
+
+            &--gr-blue {
+                background: linear-gradient(to right, #14b9d5 0%, #14d5b1 100%);
+            }
         }
     }
 }

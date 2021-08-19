@@ -27,6 +27,7 @@ a {
     display: inline-block;
     z-index: 1;
 }
+
 .underline::before {
     content: "";
     z-index: -1;
@@ -36,6 +37,15 @@ a {
     width: 100%;
     height: 5px;
 }
+
+.underline--yellow::before {
+    background-color: #FFD205;
+}
+
+.underline--orange::before {
+    background-color: #F3A46B;
+}
+
 .btn-small {
     padding: 1rem 1.5rem;
     border-radius: 2rem;
@@ -50,7 +60,20 @@ a {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
 }
+
+@-webkit-keyframes showMenu {
+    from {
+        opacity: 0;
+        transform: translateX(36rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
