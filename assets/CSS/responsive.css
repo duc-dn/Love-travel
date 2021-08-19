@@ -117,9 +117,12 @@
     }
     .best__countdown-item::after {
         content: "";
+<<<<<<< HEAD
     }
     .package {
         padding: 8rem 2rem;
+=======
+>>>>>>> 4c95da03e6ee4c28b781825cab4f74464ff85b08
     }
     /* footer  */
     .footer {
