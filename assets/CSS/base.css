@@ -45,6 +45,15 @@ a {
 .underline--orange::before {
     background-color: #F3A46B;
 }
+.underline--purple::before {
+    background-color: #BA71DA;
+}
+.underline--green::before {
+    background-color: #1BBC9B;
+}
+.underline--red::before {
+    background-color: #f76570;
+}
 
 .btn-small {
     padding: 1rem 1.5rem;

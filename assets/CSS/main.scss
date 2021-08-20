@@ -58,8 +58,9 @@ $yellow-color: #FFD205;
         left: 0;
         right: 0;
         height: 6rem;
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: rgba(0, 0, 0, 0.5);
         z-index: 1000;
+        transition: 0.4s;
     }
 }
 
@@ -191,10 +192,6 @@ $yellow-color: #FFD205;
         font-size: 5rem;
         font-weight: 700;
         color: $primary-color;
-
-        span::before {
-            background-color: $purple-color;
-        }
     }
 
     &__heading {
@@ -254,14 +251,9 @@ $yellow-color: #FFD205;
 
 
 // start destinations
-.destinations,
-.place-item {
+.destinations {
     text-align: center;
     margin: 6rem 0 8rem 0;
-
-    &__title span::before {
-        background-color: #1BBC9B;
-    }
 
     &__item {
         margin-top: 2.4rem;
@@ -381,10 +373,6 @@ $yellow-color: #FFD205;
         font-weight: 700;
         color: $primary-color;
         margin-left: 18rem;
-
-        span::before {
-            background-color: $red-color;
-        }
     }
 
     &-btn {
@@ -590,10 +578,6 @@ $yellow-color: #FFD205;
 
     &__title {
         margin-bottom: 5rem;
-
-        span::before {
-            background-color: $green-color;
-        }
     }
 
     &__item {
@@ -845,7 +829,7 @@ $yellow-color: #FFD205;
         position: absolute;
         top: 0;
         right: 0;
-        z-index: 3;
+        z-index: 999;
         font-size: 3rem;
         color: rgba(128, 128, 128, 0.384);
         padding: 1rem;
@@ -863,7 +847,7 @@ $yellow-color: #FFD205;
         background-color: $primary-color;
         height: 100%;
         overflow-y: auto;
-        z-index: 2;
+        z-index: 999;
         padding: 0rem 3.5rem 2rem 3.5rem;
         width: 34rem;
         text-align: center;

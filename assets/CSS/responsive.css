@@ -85,6 +85,10 @@
 }
 /* Mobile */
 @media (max-width: 739px) {
+
+    .pc-menu__container {
+        width: 100%;
+    }
     .search {
         padding-left: 20px;
         padding-right: 20px;
@@ -117,13 +121,14 @@
     }
     .best__countdown-item::after {
         content: "";
-<<<<<<< HEAD
     }
     .package {
         padding: 8rem 2rem;
-=======
->>>>>>> 4c95da03e6ee4c28b781825cab4f74464ff85b08
     }
+
+
+
+
     /* footer  */
     .footer {
         padding-bottom: 0;
