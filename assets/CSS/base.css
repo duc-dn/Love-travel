@@ -65,24 +65,4 @@ a {
     border-radius: 2.5rem;
 }
 
-@-webkit-keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-@-webkit-keyframes showMenu {
-    from {
-        opacity: 0;
-        transform: translateX(36rem);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
 

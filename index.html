@@ -12,9 +12,11 @@
     <link rel="stylesheet" href="assets/CSS/grid.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -95,10 +97,12 @@
 
             <!-- START MENU PC   -->
             <div class="pc-menu" id="pc-menu">
+                <div class="pc-menu__overlay" id="pc-menu__overlay"></div>
                 <div class="pc-menu__container" id="pc-menu__container">
                     <i class="pc-menu__btn-close far fa-times-circle" id="btn-close"></i>
                     <span class="pc-menu__sub-title heading__sub-title">Best</span>
-                    <h4 class="pc-menu__title heading__title"><span class="underline underline--yellow">PACKAGES</span></h4>
+                    <h4 class="pc-menu__title heading__title"><span
+                            class="underline underline--yellow">PACKAGES</span></h4>
 
                     <div class="pc-menu__item">
                         <img src="assets/img/package-1-150x150.jpg" alt="" class="pc-menu__img">
@@ -120,7 +124,8 @@
                                 <i class="pc-menu__item-icon fas fa-map-marker-alt"></i>
                                 <span class="pc-menu__item-name-place">Asia</span>
                             </div>
-                            <a href="" class="pc-menu__item-btn pc-menu__item-btn--gr-red">From 700 $</a>
+                            <a href="" class="pc-menu__item-btn pc-menu__item-btn--gr-red">From 700
+                                $</a>
                         </div>
                     </div>
 
@@ -132,12 +137,14 @@
                                 <i class="pc-menu__item-icon fas fa-map-marker-alt"></i>
                                 <span class="pc-menu__item-name-place">United States</span>
                             </div>
-                            <a href="" class="pc-menu__item-btn pc-menu__item-btn--gr-purple">From 700 $</a>
-                        </div> 
+                            <a href="" class="pc-menu__item-btn pc-menu__item-btn--gr-purple">From
+                                700 $</a>
+                        </div>
                     </div>
 
                     <div class="destinations__item">
-                        <img src="assets/img/destination-9.jpg" alt="" class="destinations__background">
+                        <img src="assets/img/destination-9.jpg" alt=""
+                            class="destinations__background">
                         <img src="assets/img/arch.png" alt="" class="destinations__symbol">
                         <div class="destinations__services">
                             <h3 class="destinations__place-name">Europe</h3>
@@ -158,13 +165,15 @@
                                         <a href="" class="destinations__overlay-link">Amsterdam</a>
                                     </li>
                                 </ul>
-                                <a href="" class="btn-small destinations__overlay-btn">VIEW DESTINATION</a>
+                                <a href="" class="btn-small destinations__overlay-btn">VIEW
+                                    DESTINATION</a>
                             </div>
                         </div>
                     </div>
 
                     <span class="pc-menu__sub-title heading__sub-title">LAST</span>
-                    <h4 class="pc-menu__title heading__title"><span class="underline underline--orange">MINUTES</span></h4>
+                    <h4 class="pc-menu__title heading__title"><span
+                            class="underline underline--orange">MINUTES</span></h4>
 
                     <div class="pc-menu__item">
                         <img src="assets/img/package-1-150x150.jpg" alt="" class="pc-menu__img">
@@ -174,7 +183,8 @@
                                 <i class="pc-menu__item-icon fas fa-map-marker-alt"></i>
                                 <span class="pc-menu__item-name-place">Italy</span>
                             </div>
-                            <a href="" class="pc-menu__item-btn pc-menu__item-btn--gr-green">From 700 $</a>
+                            <a href="" class="pc-menu__item-btn pc-menu__item-btn--gr-green">From
+                                700 $</a>
                         </div>
                     </div>
 
@@ -186,7 +196,8 @@
                                 <i class="pc-menu__item-icon fas fa-map-marker-alt"></i>
                                 <span class="pc-menu__item-name-place">Netherlands</span>
                             </div>
-                            <a href="" class="pc-menu__item-btn pc-menu__item-btn--gr-orange">From 700 $</a>
+                            <a href="" class="pc-menu__item-btn pc-menu__item-btn--gr-orange">From
+                                700 $</a>
                         </div>
                     </div>
 
@@ -198,8 +209,9 @@
                                 <i class="pc-menu__item-icon fas fa-map-marker-alt"></i>
                                 <span class="pc-menu__item-name-place">ThaiLand</span>
                             </div>
-                            <a href="" class="pc-menu__item-btn pc-menu__item-btn--gr-blue">From 700 $</a>
-                        </div> 
+                            <a href="" class="pc-menu__item-btn pc-menu__item-btn--gr-blue">From 700
+                                $</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -220,17 +232,29 @@
                     </p>
 
                     <div class="search__form">
-                        <input type="text" name="" id="search-form" class="search__input"
-                            placeholder="Choose your Destination">
-                        <i class="search__btn-icon fas fa-search"></i>
+                        <div class="search__form-input">
+                            <input type="text" name="" id="search-form" class="search__input"
+                                placeholder="Choose your Destination">
+                            <i class="search__btn-icon fas fa-search"></i>
+                            <ul class="search__suggestions">
+                                <li class="search__suggestions-item">Choose your Destination ...</li>
+                                <li class="search__suggestions-item">Europe</li>
+                                <li class="search__suggestions-item">United States</li>
+                                <li class="search__suggestions-item">Viet Nam</li>
+                                <li class="search__suggestions-item">Oceania</li>
+                            </ul>
+                        </div>
+
                     </div>
 
                     <div class="search__categories">
                         <a href="" class="search__categories-item">
-                            <img src="assets/img/t-cultural.png" alt="" class="search__categories-img">
+                            <img src="assets/img/t-cultural.png" alt=""
+                                class="search__categories-img">
                         </a>
                         <a href="" class="search__categories-item">
-                            <img src="assets/img/t-history.png" alt="" class="search__categories-img">
+                            <img src="assets/img/t-history.png" alt=""
+                                class="search__categories-img">
                         </a>
                         <a href="" class="search__categories-item">
                             <img src="assets/img/t-relax.png" alt="" class="search__categories-img">
@@ -247,12 +271,14 @@
         <!-- start destination -->
         <section class="destinations">
             <span class="heading__sub-title">OUR PROPOSALS</span>
-            <h2 class="heading__title destinations__title">OUR <span class="underline underline--green">DESTINATIONS</span></h2>
+            <h2 class="heading__title destinations__title">OUR <span
+                    class="underline underline--green">DESTINATIONS</span></h2>
             <div class="grid wide">
                 <div class="row">
                     <div class="col l-4 m-12 c-12">
                         <div class="destinations__item">
-                            <img src="assets/img/destination-9.jpg" alt="" class="destinations__background">
+                            <img src="assets/img/destination-9.jpg" alt=""
+                                class="destinations__background">
                             <img src="assets/img/arch.png" alt="" class="destinations__symbol">
                             <div class="destinations__services">
                                 <h3 class="destinations__place-name">Europe</h3>
@@ -270,17 +296,20 @@
                                             <a href="" class="destinations__overlay-link">London</a>
                                         </li>
                                         <li class="destinations__overlay-item">
-                                            <a href="" class="destinations__overlay-link">Amsterdam</a>
+                                            <a href=""
+                                                class="destinations__overlay-link">Amsterdam</a>
                                         </li>
                                     </ul>
-                                    <a href="" class="btn-small destinations__overlay-btn">VIEW DESTINATION</a>
+                                    <a href="" class="btn-small destinations__overlay-btn">VIEW
+                                        DESTINATION</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col l-4 m-12 c-12">
                         <div class="destinations__item">
-                            <img src="assets/img/thai_l.jpg" alt="" class="destinations__background">
+                            <img src="assets/img/thai_l.jpg" alt=""
+                                class="destinations__background">
                             <img src="assets/img/buddha.png" alt="" class="destinations__symbol">
                             <div class="destinations__services">
                                 <h3 class="destinations__place-name">Europe</h3>
@@ -298,18 +327,22 @@
                                             <a href="" class="destinations__overlay-link">London</a>
                                         </li>
                                         <li class="destinations__overlay-item">
-                                            <a href="" class="destinations__overlay-link">Amsterdam</a>
+                                            <a href=""
+                                                class="destinations__overlay-link">Amsterdam</a>
                                         </li>
                                     </ul>
-                                    <a href="" class="btn-small destinations__overlay-btn">VIEW DESTINATION</a>
+                                    <a href="" class="btn-small destinations__overlay-btn">VIEW
+                                        DESTINATION</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col l-4 m-12 c-12">
                         <div class="destinations__item">
-                            <img src="assets/img/destination-8.jpg" alt="" class="destinations__background">
-                            <img src="assets/img/torii-gate.png" alt="" class="destinations__symbol">
+                            <img src="assets/img/destination-8.jpg" alt=""
+                                class="destinations__background">
+                            <img src="assets/img/torii-gate.png" alt=""
+                                class="destinations__symbol">
                             <div class="destinations__services">
                                 <h3 class="destinations__place-name">Europe</h3>
                                 <span class="destinations__packages">3 packages</span>
@@ -326,10 +359,12 @@
                                             <a href="" class="destinations__overlay-link">London</a>
                                         </li>
                                         <li class="destinations__overlay-item">
-                                            <a href="" class="destinations__overlay-link">Amsterdam</a>
+                                            <a href=""
+                                                class="destinations__overlay-link">Amsterdam</a>
                                         </li>
                                     </ul>
-                                    <a href="" class="btn-small destinations__overlay-btn">VIEW DESTINATION</a>
+                                    <a href="" class="btn-small destinations__overlay-btn">VIEW
+                                        DESTINATION</a>
                                 </div>
                             </div>
                         </div>
@@ -337,7 +372,8 @@
                     <div class="col l-4 m-12 c-12">
                         <div class="destinations__item">
                             <img src="assets/img/italy.jpg" alt="" class="destinations__background">
-                            <img src="assets/img/golden-gate.png" alt="" class="destinations__symbol">
+                            <img src="assets/img/golden-gate.png" alt=""
+                                class="destinations__symbol">
                             <div class="destinations__services">
                                 <h3 class="destinations__place-name">Europe</h3>
                                 <span class="destinations__packages">3 packages</span>
@@ -354,18 +390,22 @@
                                             <a href="" class="destinations__overlay-link">London</a>
                                         </li>
                                         <li class="destinations__overlay-item">
-                                            <a href="" class="destinations__overlay-link">Amsterdam</a>
+                                            <a href=""
+                                                class="destinations__overlay-link">Amsterdam</a>
                                         </li>
                                     </ul>
-                                    <a href="" class="btn-small destinations__overlay-btn">VIEW DESTINATION</a>
+                                    <a href="" class="btn-small destinations__overlay-btn">VIEW
+                                        DESTINATION</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col l-4 m-12 c-12">
                         <div class="destinations__item">
-                            <img src="assets/img/netherland.jpg" alt="" class="destinations__background">
-                            <img src="assets/img/london-eye.png" alt="" class="destinations__symbol">
+                            <img src="assets/img/netherland.jpg" alt=""
+                                class="destinations__background">
+                            <img src="assets/img/london-eye.png" alt=""
+                                class="destinations__symbol">
                             <div class="destinations__services">
                                 <h3 class="destinations__place-name">Europe</h3>
                                 <span class="destinations__packages">3 packages</span>
@@ -382,17 +422,20 @@
                                             <a href="" class="destinations__overlay-link">London</a>
                                         </li>
                                         <li class="destinations__overlay-item">
-                                            <a href="" class="destinations__overlay-link">Amsterdam</a>
+                                            <a href=""
+                                                class="destinations__overlay-link">Amsterdam</a>
                                         </li>
                                     </ul>
-                                    <a href="" class="btn-small destinations__overlay-btn">VIEW DESTINATION</a>
+                                    <a href="" class="btn-small destinations__overlay-btn">VIEW
+                                        DESTINATION</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col l-4 m-12 c-12">
                         <div class="destinations__item">
-                            <img src="assets/img/america.jpg" alt="" class="destinations__background">
+                            <img src="assets/img/america.jpg" alt=""
+                                class="destinations__background">
                             <img src="assets/img/pisa.png" alt="" class="destinations__symbol">
                             <div class="destinations__services">
                                 <h3 class="destinations__place-name">Europe</h3>
@@ -410,10 +453,12 @@
                                             <a href="" class="destinations__overlay-link">London</a>
                                         </li>
                                         <li class="destinations__overlay-item">
-                                            <a href="" class="destinations__overlay-link">Amsterdam</a>
+                                            <a href=""
+                                                class="destinations__overlay-link">Amsterdam</a>
                                         </li>
                                     </ul>
-                                    <a href="" class="btn-small destinations__overlay-btn">VIEW DESTINATION</a>
+                                    <a href="" class="btn-small destinations__overlay-btn">VIEW
+                                        DESTINATION</a>
                                 </div>
                             </div>
                         </div>
@@ -455,11 +500,13 @@
                             The Best <span class="underline">Beaches</span>
                         </h3>
                         <p class="best__desc">
-                            Lorem ipsum dolor sit amet, consectetur adip iscing elit. Proin rhoncus urna dictum neque
+                            Lorem ipsum dolor sit amet, consectetur adip iscing elit. Proin rhoncus
+                            urna dictum neque
                             molestie ultricies mauris ac.
                         </p>
                         <p class="best__desc">
-                            Lorem ipsum dolor sit amet, consectetur adip iscing elit. Proin rhoncus urna dictum neque
+                            Lorem ipsum dolor sit amet, consectetur adip iscing elit. Proin rhoncus
+                            urna dictum neque
                             molestie ultricies mauris ac.
                         </p>
 
@@ -473,7 +520,8 @@
                     <div class="col l-8 m-12 c-12">
                         <div class="best__slider-container">
                             <div class="best__slider">
-                                <img class="best__slider-img" src="assets/img/ha_long_bye.jpg" alt="">
+                                <img class="best__slider-img" src="assets/img/ha_long_bye.jpg"
+                                    alt="">
                             </div>
                             <div class="best__countdown">
                                 <div class="best__countdown-item best__countdown-item--has-slash">
@@ -510,7 +558,8 @@
                             <div class="tour__content">
                                 <h4 class="tour__content-title">World Tour</h4>
                                 <p class="tour__content-desc">
-                                    Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.
+                                    Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin
+                                    rhonc us urna dictum.
                                 </p>
                                 <a href="" class="tour__content-view-more">
                                     View More
@@ -524,7 +573,8 @@
                             <div class="tour__content">
                                 <h4 class="tour__content-title">Cruises</h4>
                                 <p class="tour__content-desc">
-                                    Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.
+                                    Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin
+                                    rhonc us urna dictum.
                                 </p>
                                 <a href="" class="tour__content-view-more">
                                     View More
@@ -538,7 +588,8 @@
                             <div class="tour__content">
                                 <h4 class="tour__content-title">Best Tours</h4>
                                 <p class="tour__content-desc">
-                                    Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.
+                                    Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin
+                                    rhonc us urna dictum.
                                 </p>
                                 <a href="" class="tour__content-view-more">
                                     View More
@@ -579,13 +630,15 @@
         <!-- start packages -->
         <section class="package">
             <span class="heading__sub-title">PROMOTIONS</span>
-            <h3 class="heading__title package__title">OUR <span class="underline underline--green">PACKAGES</span></h3>
+            <h3 class="heading__title package__title">OUR <span
+                    class="underline underline--green">PACKAGES</span></h3>
 
             <div class="grid wide">
                 <div class="row">
                     <div class="col l-4 m-12 c-12">
                         <div class="package__item">
-                            <img src="assets/img/c-package-1-1024x640.jpg" alt="" class="package__img">
+                            <img src="assets/img/c-package-1-1024x640.jpg" alt=""
+                                class="package__img">
                             <div class="package__content">
                                 <h4 class="package__place-name">Berlin</h4>
                                 <span class="package__address">
@@ -603,7 +656,8 @@
                                     </span>
                                 </div>
                                 <p class="package__desc">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut
+                                    efficitur ante.
                                     Donec dapibus dictum scelerisque.
                                 </p>
 
@@ -613,7 +667,8 @@
                     </div>
                     <div class="col l-4 m-12 c-12">
                         <div class="package__item">
-                            <img src="assets/img/c-package-2-1024x640.jpg" alt="" class="package__img">
+                            <img src="assets/img/c-package-2-1024x640.jpg" alt=""
+                                class="package__img">
                             <div class="package__content">
                                 <h4 class="package__place-name">Hong Kong</h4>
                                 <span class="package__address">
@@ -631,17 +686,20 @@
                                     </span>
                                 </div>
                                 <p class="package__desc">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut
+                                    efficitur ante.
                                     Donec dapibus dictum scelerisque.
                                 </p>
 
-                                <a href="" class="package__btn package__btn--red btn-small c-m-full-width">DETAILS</a>
+                                <a href=""
+                                    class="package__btn package__btn--red btn-small c-m-full-width">DETAILS</a>
                             </div>
                         </div>
                     </div>
                     <div class="col l-4 m-12 c-12">
                         <div class="package__item">
-                            <img src="assets/img/c-package-3-1024x640.jpg" alt="" class="package__img">
+                            <img src="assets/img/c-package-3-1024x640.jpg" alt=""
+                                class="package__img">
                             <div class="package__content">
                                 <h4 class="package__place-name">San Francisco</h4>
                                 <span class="package__address">
@@ -659,7 +717,8 @@
                                     </span>
                                 </div>
                                 <p class="package__desc">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut
+                                    efficitur ante.
                                     Donec dapibus dictum scelerisque.
                                 </p>
 
@@ -686,7 +745,8 @@
                     </div>
                     <div class="col l-6 m-12 c-12">
                         <div class="footer__search">
-                            <input type="text" name="" id="footer-search" class="footer__search-form">
+                            <input type="text" name="" id="footer-search"
+                                class="footer__search-form">
                             <a href="" class="btn-big footer__btn">SEND</a>
                         </div>
                     </div>
@@ -699,8 +759,10 @@
                         <div class="col l-6 m-12 c-12">
                             <img src="assets/img/logo-color.png" alt="" class="footer__logo">
                             <p class="footer__desc">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut diam et nibh
-                                condimentum venenatis eu ac magnasin. Quisque interdum est mauris, eget ullamcorper
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+                                ut diam et nibh
+                                condimentum venenatis eu ac magnasin. Quisque interdum est mauris,
+                                eget ullamcorper
                             </p>
 
                             <ul class="footer__social-list">

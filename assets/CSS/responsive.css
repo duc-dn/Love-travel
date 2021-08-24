@@ -45,6 +45,10 @@
     .best__slider-container {
         margin-top: 8rem;
     }
+
+    .best__countdown {
+        width: 100%;
+    }
     
     .tour__item {
         margin-bottom: 4rem;
@@ -85,7 +89,6 @@
 }
 /* Mobile */
 @media (max-width: 739px) {
-
     .pc-menu__container {
         width: 100%;
     }
@@ -101,7 +104,10 @@
         padding: 8rem 2rem;
     }
     .best__countdown {
+        position:unset;
         width: 100%;
+        left: 0;
+        transform: translateY(0);
     }
     .best__countdown-item:hover {
         background-color: #3498db;
