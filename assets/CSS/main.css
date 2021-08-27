@@ -140,6 +140,7 @@
 .search {
   background: url(../img/background.jpg) top center no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   padding-top: 27rem;
   padding-bottom: 18rem;
 }
