@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="assets/CSS/main.css">
+   <link rel="stylesheet" href="assets/CSS/base.css">
+   <link rel="stylesheet" href="assets/CSS/responsive.css">
+   <link rel="stylesheet" href="assets/CSS/grid.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+   <div class="wrapper">
+
+      <!-- start header  -->
+      <header class="header">
+         <a href="" class="header__logo">
+            <img src="assets/img/logo.png" alt="">
+         </a>
+         <ul class="navbar">
+            <li class="navbar__item">
+               <a href="index.html" class="navbar__item-link">Home</a>
+            </li>
+            <li class="navbar__item">
+               <a href="package.html" class="navbar__item-link">Packages</a>
+               <ul class="navbar__subnav">
+                  <li class="navbar__subnav-item">
+                     <a href="" class="navbar__subnav-link navbar__subnav-link--has-des">
+                        Search 1
+                     </a>
+                  </li>
+                  <li class="navbar__subnav-item">
+                     <a href="" class="navbar__subnav-link">Search 2</a>
+                  </li>
+                  <li class="navbar__subnav-item">
+                     <a href="" class="navbar__subnav-link">
+                        Tour packages
+                        <i class="navbar__subnav-item-icon fas fa-caret-right"></i>
+                     </a>
+                     <ul class="navbar__subnav-second">
+                        <li class="navbar__subnav-second-item">
+                           <a class="navbar__subnav-second-link" href="">Carousel</a>
+                        </li>
+                        <li class="navbar__subnav-second-item">
+                           <a class="navbar__subnav-second-link" href="">Custom Map</a>
+                        </li>
+                        <li class="navbar__subnav-second-item">
+                           <a class="navbar__subnav-second-link" href="">360 Panorama</a>
+                        </li>
+                        <li class="navbar__subnav-second-item">
+                           <a class="navbar__subnav-second-link" href="">Default</a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="navbar__subnav-item">
+                     <a href="" class="navbar__subnav-link">Destination</a>
+
+                  </li>
+                  <li class="navbar__subnav-item">
+                     <a href="" class="navbar__subnav-link">Typology</a>
+                  </li>
+               </ul>
+            </li>
+            <li class="navbar__item">
+               <a href="" class="navbar__item-link">Shop</a>
+               <ul class="navbar__subnav">
+                  <li class="navbar__subnav-item">
+                     <a href="" class="navbar__subnav-link">
+                        Archive
+                     </a>
+                  </li>
+                  <li class="navbar__subnav-item">
+                     <a href="" class="navbar__subnav-link">Single Product</a>
+                  </li>
+                  <li class="navbar__subnav-item">
+                     <a href="" class="navbar__subnav-link">
+                        Cart
+                     </a>
+                  </li>
+                  <li class="navbar__subnav-item">
+                     <a href="" class="navbar__subnav-link">Checkout</a>
+                  </li>
+               </ul>
+            </li>
+            <li class="navbar__item">
+               <a href="" class="navbar__item-link">About us</a>
+               <ul class="navbar__subnav">
+                  <li class="navbar__subnav-second-item">
+                     <a class="navbar__subnav-second-link navbar__subnav-link--has-des navbar__subnav-link--has-des-green"
+                        href="">About Us</a>
+                  </li>
+                  <li class="navbar__subnav-second-item">
+                     <a class="navbar__subnav-second-link" href="">About Us 1</a>
+                  </li>
+                  <li class="navbar__subnav-second-item">
+                     <a class="navbar__subnav-second-link" href="">About Us 2</a>
+                  </li>
+               </ul>
+            </li>
+            <li class="navbar__item">
+               <a href="" class="navbar__item-link">Pages</a>
+            </li>
+            <li class="navbar__item">
+               <a href="" class="navbar__item-link">News</a>
+            </li>
+            <li class="navbar__item">
+               <a href="" class="navbar__item-link">Contact</a>
+            </li>
+            <li class="navbar__item navbar__item-btn btn-small">
+               <a href="" class="navbar__item-link">Book now</a>
+            </li>
+         </ul>
+
+         <div class="header__menu-icon fas fa-bars" id="menu"></div>
+
+
+         <!-- START MENU PC   -->
+         <div class="pc-menu" id="pc-menu">
+            <div class="pc-menu__overlay" id="pc-menu__overlay"></div>
+            <div class="pc-menu__container" id="pc-menu__container">
+               <i class="pc-menu__btn-close far fa-times-circle" id="btn-close"></i>
+               <span class="pc-menu__sub-title heading__sub-title">Best</span>
+               <h4 class="pc-menu__title heading__title"><span
+                     class="underline underline--yellow">PACKAGES</span></h4>
+
+               <div class="pc-menu__item">
+                  <img src="assets/img/package-1-150x150.jpg" alt="" class="pc-menu__img">
+                  <div class="pc-menu__item-content">
+                     <h5 class="pc-menu__item-title">Berlin</h5>
+                     <div class="pc-menu__item-place">
+                        <i class="pc-menu__item-icon fas fa-map-marker-alt"></i>
+                        <span class="pc-menu__item-name-place">Europe</span>
+                     </div>
+                     <a href="" class="pc-menu__item-btn btn--gr-yellow">From 700 $</a>
+                  </div>
+               </div>
+
+               <div class="pc-menu__item">
+                  <img src="assets/img/package-2-150x150.jpg" alt="" class="pc-menu__img">
+                  <div class="pc-menu__item-content">
+                     <h5 class="pc-menu__item-title">Hong Kong</h5>
+                     <div class="pc-menu__item-place">
+                        <i class="pc-menu__item-icon fas fa-map-marker-alt"></i>
+                        <span class="pc-menu__item-name-place">Asia</span>
+                     </div>
+                     <a href="" class="pc-menu__item-btn btn--gr-red">From 700
+                        $</a>
+                  </div>
+               </div>
+
+               <div class="pc-menu__item">
+                  <img src="assets/img/package-3.jpg" alt="" class="pc-menu__img">
+                  <div class="pc-menu__item-content">
+                     <h5 class="pc-menu__item-title">San Francisco</h5>
+                     <div class="pc-menu__item-place">
+                        <i class="pc-menu__item-icon fas fa-map-marker-alt"></i>
+                        <span class="pc-menu__item-name-place">United States</span>
+                     </div>
+                     <a href="" class="pc-menu__item-btn btn--gr-purple">From
+                        700 $</a>
+                  </div>
+               </div>
+
+               <div class="destinations__item">
+                  <img src="assets/img/destination-9.jpg" alt="" class="destinations__background">
+                  <img src="assets/img/arch.png" alt="" class="destinations__symbol">
+                  <div class="destinations__services">
+                     <h3 class="destinations__place-name">Europe</h3>
+                     <span class="destinations__packages">3 packages</span>
+                  </div>
+
+                  <div class="destinations__overlay">
+                     <div class="destinations__overlay-content">
+                        <h4 class="destinations__overlay-title">Packages</h4>
+                        <ul class="destinations__overlay-list">
+                           <li class="destinations__overlay-item">
+                              <a href="" class="destinations__overlay-link">Berlin</a>
+                           </li>
+                           <li class="destinations__overlay-item">
+                              <a href="" class="destinations__overlay-link">London</a>
+                           </li>
+                           <li class="destinations__overlay-item">
+                              <a href="" class="destinations__overlay-link">Amsterdam</a>
+                           </li>
+                        </ul>
+                        <a href=""
+                           class="btn-small destinations__overlay-btn pc-menu__place-overlay-btn">VIEW
+                           DESTINATION</a>
+                     </div>
+                  </div>
+               </div>
+
+               <span class="pc-menu__sub-title heading__sub-title">LAST</span>
+               <h4 class="pc-menu__title heading__title"><span
+                     class="underline underline--orange">MINUTES</span></h4>
+
+               <div class="pc-menu__item">
+                  <img src="assets/img/package-1-150x150.jpg" alt="" class="pc-menu__img">
+                  <div class="pc-menu__item-content">
+                     <h5 class="pc-menu__item-title">Tuscany</h5>
+                     <div class="pc-menu__item-place">
+                        <i class="pc-menu__item-icon fas fa-map-marker-alt"></i>
+                        <span class="pc-menu__item-name-place">Italy</span>
+                     </div>
+                     <a href="" class="pc-menu__item-btn btn--gr-green">From
+                        700 $</a>
+                  </div>
+               </div>
+
+               <div class="pc-menu__item">
+                  <img src="assets/img/package-2-150x150.jpg" alt="" class="pc-menu__img">
+                  <div class="pc-menu__item-content">
+                     <h5 class="pc-menu__item-title">Amsterdam</h5>
+                     <div class="pc-menu__item-place">
+                        <i class="pc-menu__item-icon fas fa-map-marker-alt"></i>
+                        <span class="pc-menu__item-name-place">Netherlands</span>
+                     </div>
+                     <a href="" class="pc-menu__item-btn btn--gr-orange">From
+                        700 $</a>
+                  </div>
+               </div>
+
+               <div class="pc-menu__item">
+                  <img src="assets/img/package-3.jpg" alt="" class="pc-menu__img">
+                  <div class="pc-menu__item-content">
+                     <h5 class="pc-menu__item-title">Phuket</h5>
+                     <div class="pc-menu__item-place">
+                        <i class="pc-menu__item-icon fas fa-map-marker-alt"></i>
+                        <span class="pc-menu__item-name-place">ThaiLand</span>
+                     </div>
+                     <a href="" class="pc-menu__item-btn btn--gr-blue">From 700
+                        $</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- end header -->
+
+
+      <!-- start search  -->
+      <section class="pk-search">
+         <div class="grid wide">
+            <div class="pk-search__heading-content">
+               <span class="heading__sub-title pk-search__sub-heading">OUR PACKAGES</span>
+               <h1 class="heading__title pk-search__heading">
+                  Search your <span class="underline underline--orange">Holiday</span>
+               </h1>
+            </div>
+
+            <div class="pk-search__content">
+               <div class="row">
+                  <div class="col l-4 m-12 c-12">
+                     <div class="pk-search__destination pk-search__item">
+                        <h4 class="pk-search__title">Select Your Destination :</h4>
+                        <div class="pk-search__select">
+                           <img class="pk-search__select-icon"
+                              src="assets/imgpk/icon-pin-grey (1).png" alt="">
+                           <select name="" id="">
+                              <option value="">All Destinations</option>
+                              <option value="">Europe</option>
+                              <option value="">&nbsp;&nbsp;- Italy</option>
+                              <option value="">&nbsp;&nbsp;- Netherlands</option>
+                              <option value="">Asia</option>
+                              <option value="">&nbsp;&nbsp;- Viet Nam</option>
+                           </select>
+                        </div>
+
+                     </div>
+                  </div>
+                  <div class="col l-4 m-12 c-12">
+                     <h4 class="pk-search__title pk-search__date pk-search__item">Select Your Date :
+                     </h4>
+                     <div class="pk-search__date-form">
+                        <img src="assets/imgpk/icon-calendar-grey.png" alt="">
+                        <input type="text" name="" id="" placeholder="mm-dd-yyyy">
+                     </div>
+                  </div>
+
+                  <div class="col l-4 m-12 c-12">
+                     <div class="pk-search__price-title pk-search__item">
+                        <h4 class="pk-search__title">Max Price :</h4>
+                        <span class="pk-search__price-max">3075$</span>
+                     </div>
+                     <input type="checkbox" name="pk-search__filter" id="pk-search__filter">
+                     <label for="pk-search__filter" class="pk-search__filter"> See only promotions
+                     </label>
+                  </div>
+               </div>
+
+
+
+               <!-- filter container   -->
+               <div class="filter__content">
+                  <!-- btn pk-search more filter  -->
+                  <div class="filter__more-filter">
+                     <img src="assets/imgpk/icon-filter-white.png" alt=""
+                        class="filter__more-filter-icon">
+                     <h5>More filter</h5>
+                  </div>
+                  <div class="filter__wrapper">
+                     <ul class="filter__list">
+                        <h5 class="filter__list-title">Typologies</h5>
+                        <li class="filter__item">
+                           <input type="checkbox" name="typo" id="typo">
+                           <label for="typo">Relax</label>
+                        </li>
+                        <li class="filter__item">
+                           <input type="checkbox" name="cultural" id="cultural">
+                           <label for="cultural">Cultural</label>
+                        </li>
+                        <li class="filter__item">
+                           <input type="checkbox" name="sport" id="sport">
+                           <label for="sport">Sport</label>
+                        </li>
+                        <li class="filter__item">
+                           <input type="checkbox" name="history" id="history">
+                           <label for="history">History</label>
+                        </li>
+                     </ul>
+                     <ul class="filter__list">
+                        <h5 class="filter__list-title">Durations :</h5>
+                        <li class="filter__item">
+                           <input type="checkbox" name="" id="">
+                           <label for="">1 - 3 days</label>
+                        </li>
+                        <li class="filter__item">
+                           <input type="checkbox" name="" id="">
+                           <label for="">3 - 6 days</label>
+                        </li>
+                        <li class="filter__item">
+                           <input type="checkbox" name="" id="">
+                           <label for="">6 - 9 days</label>
+                        </li>
+                        <li class="filter__item">
+                           <input type="checkbox" name="" id="">
+                           <label for="">9 - 12 days</label>
+                        </li>
+                     </ul>
+                     <ul class="filter__list">
+                        <h5 class="filter__list-title">Difficulty :</h5>
+                        <li class="filter__item">
+                           <input type="checkbox" name="" id="">
+                           <label for="">1 - 3 days</label>
+                        </li>
+                        <li class="filter__item">
+                           <input type="checkbox" name="" id="">
+                           <label for="">3 - 6 days</label>
+                        </li>
+                        <li class="filter__item">
+                           <input type="checkbox" name="" id="">
+                           <label for="">6 - 9 days</label>
+                        </li>
+                        <li class="filter__item">
+                           <input type="checkbox" name="" id="">
+                           <label for="">9 - 12 days</label>
+                        </li>
+                     </ul>
+                     <ul class="filter__list">
+                        <h5 class="filter__list-title">Min Age :</h5>
+                        <li class="filter__item">
+                           <input type="checkbox" name="" id="">
+                           <label for="">10 Years</label>
+                        </li>
+                        <li class="filter__item">
+                           <input type="checkbox" name="" id="">
+                           <label for="">18 Years</label>
+                        </li>
+                        <li class="filter__item">
+                           <input type="checkbox" name="" id="">
+                           <label for="">3 Years</label>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- end search  -->
+
+      <div class="pk-package__list">
+         <div class="grid wide">
+            <div class="row">
+               <!-- pk-package-item -->
+               <div class="col l-6 m-12 c-12">
+                  <div class="pk-package__item">
+                     <img src="assets/imgpk/package-4-1024x640.jpg" alt="" class="pk-package__img">
+                     <div class="pk-package__content">
+                        <h4 class="pk-package__title">London</h4>
+                        <span class="pk-package__place"><img
+                              src="assets/imgpk/icon-pin-grey (1).png" alt="">Europe</span>
+                        <p class="pk-package__detail">
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut
+                           efficitur ante. Donec dapibus dictum scelerisque.
+                        </p>
+                        <div class="pk-package__send">
+                           <a href="" class="btn-small btn--gr-yellow pk-package__btn">Details</a>
+                           <span class="pk-package__price">700$</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- pk-package-item -->
+               <div class="col l-6 m-12 c-12">
+                  <div class="pk-package__item">
+                     <img src="assets/imgpk/package-1.jpg" alt="" class="pk-package__img">
+                     <div class="pk-package__content">
+                        <h4 class="pk-package__title">Viet Nam</h4>
+                        <span class="pk-package__place"><img
+                              src="assets/imgpk/icon-pin-grey (1).png" alt="">Amsterdam</span>
+                        <p class="pk-package__detail">
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut
+                           efficitur ante. Donec dapibus dictum scelerisque.
+                        </p>
+                        <div class="pk-package__send">
+                           <a href="" class="btn-small btn--gr-green pk-package__btn">Details</a>
+                           <span class="pk-package__price">700$</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- pk-package-item -->
+               <div class="col l-6 m-12 c-12">
+                  <div class="pk-package__item">
+                     <img src="assets/imgpk/package-5-1024x640.jpg" alt="" class="pk-package__img">
+                     <div class="pk-package__content">
+                        <h4 class="pk-package__title">Europe</h4>
+                        <span class="pk-package__place"><img
+                              src="assets/imgpk/icon-pin-grey (1).png" alt="">Europe</span>
+                        <p class="pk-package__detail">
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut
+                           efficitur ante. Donec dapibus dictum scelerisque.
+                        </p>
+                        <div class="pk-package__send">
+                           <a href="" class="btn-small btn--gr-red pk-package__btn">Details</a>
+                           <span class="pk-package__price">700$</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- pk-package-item -->
+               <div class="col l-6 m-12 c-12">
+                  <div class="pk-package__item">
+                     <img src="assets/imgpk/package-2.jpg" alt="" class="pk-package__img">
+                     <div class="pk-package__content">
+                        <h4 class="pk-package__title">Amsterdam</h4>
+                        <span class="pk-package__place"><img
+                              src="assets/imgpk/icon-pin-grey (1).png" alt="">Europe</span>
+                        <p class="pk-package__detail">
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut
+                           efficitur ante. Donec dapibus dictum scelerisque.
+                        </p>
+                        <div class="pk-package__send">
+                           <a href="" class="btn-small btn--gr-purple pk-package__btn">Details</a>
+                           <span class="pk-package__price">700$</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- pk-package-item -->
+               <div class="col l-6 m-12 c-12">
+                  <div class="pk-package__item">
+                     <img src="assets/imgpk/package-6.jpg" alt="" class="pk-package__img">
+                     <div class="pk-package__content">
+                        <h4 class="pk-package__title">Amsterdam</h4>
+                        <span class="pk-package__place"><img
+                              src="assets/imgpk/icon-pin-grey (1).png" alt="">Europe</span>
+                        <p class="pk-package__detail">
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut
+                           efficitur ante. Donec dapibus dictum scelerisque.
+                        </p>
+                        <div class="pk-package__send">
+                           <a href="" class="btn-small btn--gr-orange pk-package__btn">Details</a>
+                           <span class="pk-package__price">700$</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- pk-package-item -->
+               <div class="col l-6 m-12 c-12">
+                  <div class="pk-package__item">
+                     <img src="assets/imgpk/package-5-1024x640.jpg" alt="" class="pk-package__img">
+                     <div class="pk-package__content">
+                        <h4 class="pk-package__title">Amsterdam</h4>
+                        <span class="pk-package__place"><img
+                              src="assets/imgpk/icon-pin-grey (1).png" alt="">Europe</span>
+                        <p class="pk-package__detail">
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut
+                           efficitur ante. Donec dapibus dictum scelerisque.
+                        </p>
+                        <div class="pk-package__send">
+                           <a href="" class="btn-small btn--gr-blue pk-package__btn">Details</a>
+                           <span class="pk-package__price">700$</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <footer class="footer">
+      <div class="grid wide">
+         <div class="row footer__container">
+            <div class="col l-6 m-12 c-12">
+               <div class="footer__title-content">
+                  <span class="footer__sub-title heading__sub-title">KEEP IN TOUCH</span>
+                  <h3 class="footer__title heading__title">Travel with Us</h3>
+               </div>
+            </div>
+            <div class="col l-6 m-12 c-12">
+               <div class="footer__search">
+                  <input type="text" name="" id="footer-search" class="footer__search-form">
+                  <a href="" class="btn-big footer__btn">SEND</a>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="grid wide">
+         <div class="footer__details">
+            <div class="row">
+               <div class="col l-6 m-12 c-12">
+                  <img src="assets/img/logo-color.png" alt="" class="footer__logo">
+                  <p class="footer__desc">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+                     ut diam et nibh
+                     condimentum venenatis eu ac magnasin. Quisque interdum est mauris,
+                     eget ullamcorper
+                  </p>
+
+                  <ul class="footer__social-list">
+                     <li class="footer__social-item">
+                        <a href="" class="footer__social-link">
+                           <i class="fab fa-twitter"></i>
+                        </a>
+                     </li>
+                     <li class="footer__social-item">
+                        <a href="" class="footer__social-link">
+                           <i class="fab fa-facebook"></i>
+                        </a>
+                     </li>
+                     <li class="footer__social-item">
+                        <a href="" class="footer__social-link">
+                           <i class="fab fa-youtube"></i>
+                        </a>
+                     </li>
+                     <li class="footer__social-item">
+                        <a href="" class="footer__social-link">
+                           <i class="fab fa-linkedin-in"></i>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col l-2 m-12 c-12">
+                  <div class="footer__item">
+                     <h4 class="footer__item-title">
+                        OUR AGENCY
+                     </h4>
+                     <ul class="footer__list">
+                        <li class="footer__item-desc">
+                           <i class="fas fa-chevron-right"></i>
+                           Services
+                        </li>
+                        <li class="footer__item-desc">
+                           <i class="fas fa-chevron-right"></i>
+                           Insurancee
+                        </li>
+                        <li class="footer__item-desc">
+                           <i class="fas fa-chevron-right"></i>
+                           Agency
+                        </li>
+                        <li class="footer__item-desc">
+                           <i class="fas fa-chevron-right"></i>
+                           Tourism
+                        </li>
+                        <li class="footer__item-desc">
+                           <i class="fas fa-chevron-right"></i>
+                           Payment
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col l-2 m-12 c-12">
+                  <div class="footer__item">
+                     <h4 class="footer__item-title">
+                        PARTNERS
+                     </h4>
+                     <ul class="footer__list">
+                        <li class="footer__item-desc">
+                           <i class="fas fa-chevron-right"></i>
+                           Services
+                        </li>
+                        <li class="footer__item-desc">
+                           <i class="fas fa-chevron-right"></i>
+                           Insurancee
+                        </li>
+                        <li class="footer__item-desc">
+                           <i class="fas fa-chevron-right"></i>
+                           Agency
+                        </li>
+                        <li class="footer__item-desc">
+                           <i class="fas fa-chevron-right"></i>
+                           Tourism
+                        </li>
+                        <li class="footer__item-desc">
+                           <i class="fas fa-chevron-right"></i>
+                           Payment
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col l-2 m-12 c-12">
+                  <div class="footer__item">
+                     <h4 class="footer__item-title">
+                        LAST MINUTE
+                     </h4>
+                     <ul class="footer__list">
+                        <li class="footer__item-desc">
+                           <i class="fas fa-chevron-right"></i>
+                           Services
+                        </li>
+                        <li class="footer__item-desc">
+                           <i class="fas fa-chevron-right"></i>
+                           Insurancee
+                        </li>
+                        <li class="footer__item-desc">
+                           <i class="fas fa-chevron-right"></i>
+                           Agency
+                        </li>
+                        <li class="footer__item-desc">
+                           <i class="fas fa-chevron-right"></i>
+                           Tourism
+                        </li>
+                        <li class="footer__item-desc">
+                           <i class="fas fa-chevron-right"></i>
+                           Payment
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+         <div class="footer__footer">
+            <span class="footer_author">THE BEST WORDPRESS TRAVEL THEME</span>
+            <span class="footer_copyright">COPYRIGHT NICDARK THEMES 2018</span>
+         </div>
+      </div>
+   </footer>
+   <script src="./assets/js-menu.js"></script>
+</body>
+
+</html>
